@@ -1,0 +1,27 @@
+{
+  "name": "image4io",
+  "version": "0.4.1",
+  "description": "image4io Wordpress Plugin. Speeds up the images' load time: image optimization, image CDN and image storage, all-in-one platform.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:scripts": "wp-scripts build",
+    "start-build": "wp-scripts start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Image4IO/image4io-wp-plugin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Image4IO/image4io-wp-plugin/issues"
+  },
+  "homepage": "https://github.com/Image4IO/image4io-wp-plugin#readme",
+  "devDependencies": {
+    "@wordpress/scripts": "7.1.2"
+  },
+  "dependencies": {
+    "@wordpress/data": "^4.14.1"
+  }
+}

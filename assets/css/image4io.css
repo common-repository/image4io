@@ -1,0 +1,83 @@
+.image4io-card {
+  width: 100px;
+  max-height: 200px;
+}
+
+.image-frame {
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content:center;
+  flex-direction:column;
+}
+
+.image4io-container{
+  display:flex;
+  width: 100%;
+  flex-direction:row;
+  flex-wrap:wrap;
+  margin :10px;
+}
+
+.image4io-container:after{
+  content: "";
+  flex: auto;
+}
+
+.image-frame > .frame-img > img , .image-frame > .frame-img > .image-centered > img{
+  text-align: center;
+  width: 100%;
+  height: auto;
+  max-width: 64px;
+  max-height: 64px;
+}
+
+.image4io-folder-path > a {
+  text-decoration: none;
+  color: #000;
+}
+.image-frame > h4{
+  word-break: break-word;
+  text-align:center;
+}
+.frame-img{
+  width: 64px;
+  height:64px;
+  max-width: 100%;
+  display:table;
+}
+
+.image-centered{
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.image-img > .frame-img{
+  background-color: #fefefe;
+  background-image: -webkit-linear-gradient(45deg,#cbcbcb 25%,transparent 25%,transparent 75%,#cbcbcb 75%,#cbcbcb),-webkit-linear-gradient(45deg,#cbcbcb 25%,transparent 25%,transparent 75%,#cbcbcb 75%,#cbcbcb);
+  background-image: -moz-linear-gradient(45deg,#cbcbcb 25%,transparent 25%,transparent 75%,#cbcbcb 75%,#cbcbcb),-moz-linear-gradient(45deg,#cbcbcb 25%,transparent 25%,transparent 75%,#cbcbcb 75%,#cbcbcb);
+  background-image: -o-linear-gradient(45deg,#cbcbcb 25%,transparent 25%,transparent 75%,#cbcbcb 75%,#cbcbcb),-o-linear-gradient(45deg,#cbcbcb 25%,transparent 25%,transparent 75%,#cbcbcb 75%,#cbcbcb);
+  background-image: -ms-linear-gradient(45deg,#cbcbcb 25%,transparent 25%,transparent 75%,#cbcbcb 75%,#cbcbcb),-ms-linear-gradient(45deg,#cbcbcb 25%,transparent 25%,transparent 75%,#cbcbcb 75%,#cbcbcb);
+  /* background-image: linear-gradient(45deg,#cbcbcb 25%,transparent 25%,transparent 75%,#cbcbcb 75%,#cbcbcb),linear-gradient(45deg,#cbcbcb 25%,transparent 25%,transparent 75%,#cbcbcb 75%,#cbcbcb); */
+  -webkit-background-size: 14px 14px;
+  -moz-background-size: 14px 14px;
+  background-size: 14px 14px;
+  background-position: 0 0,8px 8px;
+}
+
+.image4io-folder-path > a:after {
+  content: " /";
+}
+.image4io-folder-path > a:first-child:before {
+  content: " Path » ";
+}
+.image4io-folder-path > a:last-child:after {
+  content: "";
+}
+.shortcode-image{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
